@@ -1,3 +1,5 @@
+-- Script name was FriendsList when i performed the dump, script was running in nilinstances
+
 -- Decompiled by Sabre (https://www.decompiler.lol/) - bytecode v9 types v3
 
 local r0_0 = `Very Good String {math.random()}`
