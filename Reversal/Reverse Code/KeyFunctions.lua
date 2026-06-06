@@ -1,4 +1,4 @@
-While analysing in found a namecall detection in the dumped [CameraShaker] script
+While analysing ac found a namecall detection in the dumped [CameraShaker] script
 
 This detection looks very similar to a public detection that i've reversed before, the detection i'm talking about is a newproxy detection that abused getmetatable(proxy).__tostring combined with a pcall(getfenv) call and did a for int iteration just like BloxStrike's ac module is doing
 
