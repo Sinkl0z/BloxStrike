@@ -1,6 +1,6 @@
 # BloxStrike open source repo
 
-Everything in repo is made by me unless you see a credit line near a codeblock.
+All credits go to me and everyone in the Credits file under main
 
 v3rm: sink
 
