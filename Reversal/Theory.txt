@@ -1,0 +1,9 @@
+ReplicatedFirst [FriendsList] is likely to be the loader 
+ReplicatedFirst [CameraShaker] is 100% the Anti Cheat module
+
+Both scripts are running in nil
+
+Reversal status: Working on figuring out key detection functions.
+
+My hypothesis is that the obfuscated [CameraShaker] script has a C stack overflow wrapper function somewhere which is detecting hookmetamethods.
+I'll start off by attacking the overflow detection.
