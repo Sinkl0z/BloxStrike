@@ -57,6 +57,8 @@ This is the latest function i found in the AC module which seems to be a very co
 A similar detection to this that i've bypassed before was implemented in Murderers vs Sheriffs
 
 I currently don't know what the r5_0 temp var is referencing but i'll do some dbgconstant / dbgupvalue digging to figure it out, potentially hook pcall and check the argument through the hook.
+
+I've analysed function F and it's behaviour a bit more in deepth and it seems as it only is ever called whenever you hook something. It's behaviour is really similar to murderers vs sherriffs detection
                         
 F = function(r0)
         local r1_0, r2_0, r3_0, r4_0, r5_0, r6 = r0[3], r0[2], r0[4], r0[5], r0[0], r0[1]
