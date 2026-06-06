@@ -27,7 +27,7 @@ e = function(r0) -- Line: 108 | Name: e
 end
 
 
-This is a shell detection which working together with the __tostring detection, detects hooks.
+This is a shell detection which working together with the __tostring detection, detects hooks. (Called under same xpcall)
               
 end, function(r0)
           if r0 ~= "'__tostring' must return a string" then r9_0[1][r9_0[3]] = "Namecall Tampering #2" end
