@@ -51,3 +51,28 @@ end, function(r0)
       r8_0[1][r8_0[3]] = r5_p171
   end
 end,
+
+
+This is the latest function i found in the AC module which seems to be a very common error message str num check, the only interesting part about this function is the argument passed in the pcall(r5_0)
+A similar detection to this that i've bypassed before was implemented in Murderers vs Sheriffs
+
+I currently don't know what the r5_0 temp var is referencing but i'll do some dbgconstant / dbgupvalue digging to figure it out, potentially hook pcall and check the argument through the hook.
+                        
+F = function(r0)
+        local r1_0, r2_0, r3_0, r4_0, r5_0, r6 = r0[3], r0[2], r0[4], r0[5], r0[0], r0[1]
+        return function() 
+            r1_0[1][r1_0[3]](function()
+                while true do
+                    task.wait(1)
+                    r2_0[1][r2_0[3]] = 0
+                    r6[1][r6[3]] = 0
+                    local r0, r1 = pcall(r5_0)
+                    for r5 in string.gmatch(r1, r3_0) do
+                        local r7, r8 = r6[1], r6[3]
+                        r7[r8] += 1
+                    end
+                    if r2_0[1][r2_0[3]] ~= r6[1][r6[3]] then r4_0[1][r4_0[3]] = "Namecall Detected" end
+                end
+            end)
+        end
+    end,
