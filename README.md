@@ -1,4 +1,4 @@
-# BloxStrike open source repo
+# BloxStrike open source repo [BAC Anti Cheat Focused]
 
 All credits go to me and everyone in the Credits file under main
 
